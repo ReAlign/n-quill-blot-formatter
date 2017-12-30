@@ -1,4 +1,10 @@
-**/node_modules/**
+
+.DS_Store
+.classpath
+.project
 .idea/
-dist/
+.vscode/
+
+**/node_modules/**
 yarn-error.log
+package-lock.json
