@@ -25,11 +25,8 @@ export default class ImageSpec extends BlotSpec {
 
   onClick = (event: MouseEvent) => {
     const el = event.target;
-    console.log(el);
-    console.log(el.className);
-    console.log(el.dataset);
-    console.log(el.style);
-    if (!(el instanceof HTMLElement) || el.tagName !== 'IMG' || el.dataset.resize === 'no') {
+
+    if (!(el instanceof HTMLElement) || el.tagName !== 'IMG' || (el.dataset && el.dataset.resize === 'no')) {
       return;
     }
 
