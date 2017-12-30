@@ -36,7 +36,7 @@ var ImageSpec = function (_BlotSpec) {
       console.log(el.className);
       console.log(el.dataset);
       console.log(el.style);
-      if (!(el instanceof HTMLElement) || el.tagName !== 'IMG') {
+      if (!(el instanceof HTMLElement) || el.tagName !== 'IMG' || el.dataset.resize === 'no') {
         return;
       }
 
